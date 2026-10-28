@@ -44,7 +44,7 @@ const PAGE_META: Record<RouteId, { title: string; description: string }> = {
   },
   contact: {
     title: `Contact · ${SITE_NAME}`,
-    description: 'Book a sidemount, cave, technical or rebreather course. Email dive@rimstonediving.com or call/text +1 (206) 227-9715.',
+    description: 'Book a sidemount, cave, technical or rebreather course. Email tim@rimstonediving.com or call/text +1 (206) 227-9715.',
   },
 };
 

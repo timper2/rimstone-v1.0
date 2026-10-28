@@ -52,6 +52,6 @@ export const FAQ: FaqItem[] = [
   {
     question: 'How do I book a course?',
     answer:
-      'Email dive@rimstonediving.com or call, text or WhatsApp +1 (206) 227-9715. Office hours are Monday to Friday, 9:00 to 5:00 Eastern Time.',
+      'Email tim@rimstonediving.com or call, text or WhatsApp +1 (206) 227-9715. Office hours are Monday to Friday, 9:00 to 5:00 Eastern Time.',
   },
 ];
