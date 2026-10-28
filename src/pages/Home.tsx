@@ -159,7 +159,10 @@ export default function Home({ navigate }: HomeProps) {
         </div>
       </section>
 
-      <LayoutTabs active={activeLayout} onChange={setActiveLayout} />
+      {/* Layout tabs hidden; only layout C is shown. Remove `hidden` to bring options A and B back. */}
+      <div hidden>
+        <LayoutTabs active={activeLayout} onChange={setActiveLayout} />
+      </div>
 
       <section
         id="classes"
@@ -520,7 +523,7 @@ export default function Home({ navigate }: HomeProps) {
         className="border-t border-white/10 bg-slate-900/30"
       >
         <div className="mx-auto max-w-7xl container-px py-24 sm:py-32">
-          <p className="mb-10 inline-flex border border-white/15 px-3 py-1.5 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-slate-300">
+          <p hidden className="mb-10 border border-white/15 px-3 py-1.5 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-slate-300">
             Layout option C: Synthesized core authority
           </p>
           <header className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
