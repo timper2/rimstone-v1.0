@@ -37,9 +37,10 @@ SEO / GEO SETUP (already built, keep it working)
 - public/llms.txt: plain-text summary of the site for AI search engines.
 - public/robots.txt: allows all crawlers, including AI crawlers, and points to
   the sitemap.
-- index.html: JSON-LD structured data (organization, courses, FAQ).
+- index.html: JSON-LD structured data (organization, courses).
 - Homepage has a crawlable FAQ section (src/data/faq.ts,
-  src/components/FaqSection.tsx).
+  src/components/FaqSection.tsx). The FAQPage JSON-LD is rendered by
+  FaqSection.tsx (home page only), not index.html.
 - The committed dist/ folder: if a test build changes it, restore it with git
   before committing.
 
