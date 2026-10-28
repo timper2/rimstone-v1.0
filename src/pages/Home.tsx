@@ -3,6 +3,7 @@ import { ArrowRight, Compass, Gauge, LifeBuoy, Waves, Wind } from 'lucide-react'
 import { COURSES } from '@/data/courses';
 import type { NavigateFn } from '@/lib/useRouter';
 import CtaBanner from '@/components/CtaBanner';
+import FaqSection from '@/components/FaqSection';
 import LayoutTabs, { type LayoutId } from '@/components/LayoutTabs';
 
 interface HomeProps {
@@ -783,6 +784,8 @@ export default function Home({ navigate }: HomeProps) {
           </ul>
         </div>
       </section>
+
+      <FaqSection />
 
       <CtaBanner
         navigate={navigate}

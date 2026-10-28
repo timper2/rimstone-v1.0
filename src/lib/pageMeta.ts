@@ -52,9 +52,12 @@ function setMeta(selector: string, attr: 'content' | 'href', value: string) {
   document.querySelector(selector)?.setAttribute(attr, value);
 }
 
+export function getPageMeta(route: RouteId) {
+  return { ...PAGE_META[route], url: `${SITE_URL}${routeToPath(route)}` };
+}
+
 export function applyPageMeta(route: RouteId) {
-  const { title, description } = PAGE_META[route];
-  const url = `${SITE_URL}${routeToPath(route)}`;
+  const { title, description, url } = getPageMeta(route);
 
   document.title = title;
   setMeta('meta[name="description"]', 'content', description);

@@ -17,6 +17,10 @@
       "dest": "/api/$1"
     },
     {
+      "src": "/(sidemount|cave|technical|rebreather|tryout|services|about|contact)/?",
+      "dest": "/$1/index.html"
+    },
+    {
       "src": "/[^.]*",
       "dest": "/",
       "status": 200

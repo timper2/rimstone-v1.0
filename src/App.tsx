@@ -11,8 +11,8 @@ import { useRouter } from '@/lib/useRouter';
 import { applyPageMeta } from '@/lib/pageMeta';
 import { useEffect } from 'react';
 
-function App() {
-  const { route, navigate } = useRouter();
+function App({ initialPath }: { initialPath?: string }) {
+  const { route, navigate } = useRouter(initialPath);
 
   useEffect(() => {
     applyPageMeta(route);
