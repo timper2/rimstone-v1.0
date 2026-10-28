@@ -16,6 +16,15 @@ PROJECT
 - The site is purely static frontend. No Supabase, no database, no backend.
   Supabase was removed on purpose. Do not add it back or add any other backend.
 
+BUSINESS DETAILS (use these everywhere: JSON-LD, llms.txt, About, footer)
+- Business: Rimstone Diving (technical and cave diving instruction)
+- Owner / instructor: Tim Perrault
+- Website: https://rimstonediving.com
+- Email: tim@rimstonediving.com (the contact form sends here too)
+- Location: Fort White, Florida 32038. No street address is published.
+- Prices are NOT published on purpose (industry norm for technical/cave
+  diving). Do not add prices.
+
 SEO / GEO SETUP (already built, keep it working)
 - Every page is prerendered to real HTML at build time so search engines and
   AI search engines can read it without running JavaScript.
@@ -61,7 +70,7 @@ Read and follow ADDING-A-PAGE.md in the repo root, and confirm every item:
  9. Images             - descriptive alt text, width and height on every <img>
 10. Verify             - run the build, check dist/[path]/index.html has the
                          title, description, and content
-After publishing: resubmit https://[your-domain]/sitemap.xml in Google Search Console.
+After publishing: resubmit https://rimstonediving.com/sitemap.xml in Google Search Console.
 
 PROMPT TO ADD A PAGE (fill in the brackets)
 Add a new page: [Page name] at /[url-path].
