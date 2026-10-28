@@ -109,7 +109,7 @@ export default function Contact() {
             ) : (
               <form 
                 onSubmit={submit} 
-                action={["https:", "", "formsubmit.co", "ajax", "rehash.cation1q@icloud.com"].join("/")}
+                action={["https:", "", "formsubmit.co", "ajax", "tim@rimstonediving.com"].join("/")}
                 method="POST"
                 className="mt-8 space-y-5"
               >

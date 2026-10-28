@@ -102,8 +102,8 @@ export default function Footer({ navigate }: FooterProps) {
             <ul className="mt-4 space-y-3 text-sm text-slate-300">
               <li className="flex items-center gap-2.5">
                 <Mail className="h-4 w-4 text-accent" />
-                <a href="mailto:dive@rimstonediving.com" className="hover:text-accent">
-                  dive@rimstonediving.com
+                <a href="mailto:tim@rimstonediving.com" className="hover:text-accent">
+                  tim@rimstonediving.com
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
@@ -112,7 +112,7 @@ export default function Footer({ navigate }: FooterProps) {
               </li>
               <li className="flex items-center gap-2.5">
                 <MapPin className="h-4 w-4 text-accent" />
-                <span>Fort White, Florida</span>
+                <span>Fort White, Florida 32038</span>
               </li>
             </ul>
           </div>

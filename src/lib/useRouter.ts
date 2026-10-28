@@ -12,8 +12,10 @@ function currentPath(): string {
   return window.location.pathname.replace(/\/+$/, '') || '/';
 }
 
-export function useRouter() {
+export function useRouter(initialPath?: string) {
   const [route, setRoute] = useState<RouteId>(() => {
+    // During build-time prerendering there is no window, so the path is passed in.
+    if (typeof window === 'undefined') return pathToRoute(initialPath ?? '/');
     migrateLegacyHashRoute();
     return pathToRoute(currentPath());
   });
