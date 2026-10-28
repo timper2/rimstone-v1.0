@@ -1,0 +1,74 @@
+V0 PROJECT NOTES - rimstone-v1.0
+=================================
+
+HOW TO USE THIS FILE
+If this project is lost in v0, or you start a new chat, paste everything
+below the line into the first message. It tells v0 how this project works
+and the rules to follow.
+
+-------------------------------------------------------------------------
+
+Note to v0 (project memory for rimstone-v1.0):
+
+PROJECT
+- Repo: timper2/rimstone-v1.0 (GitHub). Base branch: main.
+- Stack: Vite + React + TypeScript + Tailwind CSS. NOT Next.js.
+- The site is purely static frontend. No Supabase, no database, no backend.
+  Supabase was removed on purpose. Do not add it back or add any other backend.
+
+SEO / GEO SETUP (already built, keep it working)
+- Every page is prerendered to real HTML at build time so search engines and
+  AI search engines can read it without running JavaScript.
+- Build command (package.json):
+    vite build && vite build --ssr src/entry-server.tsx --outDir dist-server
+    && node scripts/prerender.mjs
+- scripts/prerender.mjs renders each route to dist/[path]/index.html and
+  generates sitemap.xml from the route list. It stops the build with an error
+  if a page is missing from vercel.json.
+- public/llms.txt: plain-text summary of the site for AI search engines.
+- public/robots.txt: allows all crawlers, including AI crawlers, and points to
+  the sitemap.
+- index.html: JSON-LD structured data (organization, courses, FAQ).
+- Homepage has a crawlable FAQ section (src/data/faq.ts,
+  src/components/FaqSection.tsx).
+- The committed dist/ folder: if a test build changes it, restore it with git
+  before committing.
+
+KEY FILES
+- src/lib/routes.ts    route list (id, path, label, short, priority); sitemap source
+- src/lib/pageMeta.ts  title + description for every page
+- src/lib/useRouter.ts client-side routing
+- src/App.tsx          renders the page for each route
+- src/entry-server.tsx server render entry used by prerendering
+- src/main.tsx         client entry (hydrates prerendered HTML)
+- src/pages/           one component per page
+- vercel.json          serves each prerendered page path
+
+HOMEPAGE NOTE
+- Layer 1 and Layer 2 are hidden on the homepage; only Layer 3 shows.
+- The Layer 3 label is hidden but kept in the code so it can be turned back on.
+
+WHEN ADDING A NEW PAGE
+Read and follow ADDING-A-PAGE.md in the repo root, and confirm every item:
+ 1. src/lib/routes.ts  - add to RouteId and ROUTES
+ 2. vercel.json        - add the path (build fails if missing)
+ 3. src/pages/[Name].tsx - create the page
+ 4. src/App.tsx        - add a case for the route
+ 5. src/lib/pageMeta.ts - unique title (<60 chars) and description (<160 chars)
+ 6. public/llms.txt    - add page URL + one-sentence summary
+ 7. index.html JSON-LD - update only for a new course or service
+ 8. Navigation         - navbar and/or footer link if needed
+ 9. Images             - descriptive alt text, width and height on every <img>
+10. Verify             - run the build, check dist/[path]/index.html has the
+                         title, description, and content
+After publishing: resubmit https://[your-domain]/sitemap.xml in Google Search Console.
+
+PROMPT TO ADD A PAGE (fill in the brackets)
+Add a new page: [Page name] at /[url-path].
+Content: [what the page is about, or paste the copy].
+Show it in the navbar: [yes/no]. Show it in the footer: [yes/no].
+Follow ADDING-A-PAGE.md and confirm every checklist item when you are done.
+
+OTHER
+- A leftover env variable NEXT_PUBLIC_DEV_SUPABASE_REDIRECT_URL may still
+  exist in Vercel. Nothing uses it; it is safe to delete.
