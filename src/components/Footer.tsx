@@ -112,7 +112,7 @@ export default function Footer({ navigate }: FooterProps) {
               </li>
               <li className="flex items-center gap-2.5">
                 <MapPin className="h-4 w-4 text-accent" />
-                <span>Fort White, Florida</span>
+                <span>Fort White, Florida 32038</span>
               </li>
             </ul>
           </div>

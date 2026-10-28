@@ -32,7 +32,7 @@ export default function About() {
           </div>
           <div className="space-y-6 text-base leading-relaxed text-slate-300 sm:text-lg">
             <p>
-              Rimstone is led by Tim, a TDI Technical Instructor and PADI Technical Instructor Trainer based in Fort White, Florida—in the heart of Cave Country
+              Rimstone is led by Tim Perrault, a TDI Technical Instructor and PADI Technical Instructor Trainer based in Fort White, Florida—in the heart of Cave Country
             </p>
             <p>
               Tim teaches a comprehensive range of technical and cave diving tracks, spanning open-circuit decompression configurations, sidemount platforms, and closed-circuit rebreather (CCR) systems, with a particular focus on the KISS Sidewinder and AP Inspiration architectures. Instruction covers your entire progression from foundational double-tank stability and advanced nitrox gas planning to full cave diving and deep mixed-gas profiles.

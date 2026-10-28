@@ -40,7 +40,7 @@ const PAGE_META: Record<RouteId, { title: string; description: string }> = {
   about: {
     title: `About · ${SITE_NAME}`,
     description:
-      'Rimstone is led by Tim, a TDI Technical Instructor and PADI Technical Instructor Trainer based in Fort White, Florida.',
+      'Rimstone is led by Tim Perrault, a TDI Technical Instructor and PADI Technical Instructor Trainer based in Fort White, Florida.',
   },
   contact: {
     title: `Contact · ${SITE_NAME}`,

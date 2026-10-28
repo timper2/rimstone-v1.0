@@ -88,7 +88,7 @@ export default function Home({ navigate }: HomeProps) {
               About Rimstone
             </p>
             <p className="mt-4 text-lg leading-relaxed text-slate-300 sm:text-xl">
-              Led by Tim, a TDI Technical Instructor and PADI Technical Instructor Trainer, Rimstone delivers comprehensive training across the entire spectrum of open and closed circuit technical diving. Operating out of Fort White, Florida—the epicenter of Cave Country—our programs focus strictly on foundational stability, equipment fluency, and sharp analytical judgment.
+              Led by Tim Perrault, a TDI Technical Instructor and PADI Technical Instructor Trainer, Rimstone delivers comprehensive training across the entire spectrum of open and closed circuit technical diving. Operating out of Fort White, Florida—the epicenter of Cave Country—our programs focus strictly on foundational stability, equipment fluency, and sharp analytical judgment.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-slate-300 sm:text-xl">
               Our training tracks support your entire progression: from your first steps into redundant technical setups and open-circuit decompression diving, through advanced mixed-gas trimix plans, to cave diving and unit-specific CCR transitions on the KISS Sidewinder and AP Inspiration platforms. We train thinking divers to excel in unforgiving environments, because in the end, skill is built one dive at a time.
