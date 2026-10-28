@@ -18,7 +18,7 @@ export default function About() {
               width="1408"
               height="1750"
               loading="eager"
-              fetchPriority="high"
+              {...{ fetchpriority: 'high' }}
               decoding="async"
               className="block h-80 w-full object-cover"
             />

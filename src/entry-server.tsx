@@ -12,4 +12,4 @@ export function render(path: string) {
   );
 }
 
-export const pages = ROUTES.map((r) => ({ path: r.path, ...getPageMeta(r.id) }));
+export const pages = ROUTES.map((r) => ({ path: r.path, priority: r.priority, ...getPageMeta(r.id) }));
