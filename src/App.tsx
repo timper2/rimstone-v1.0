@@ -8,9 +8,15 @@ import Contact from '@/pages/Contact';
 import About from '@/pages/About';
 import { COURSES } from '@/data/courses';
 import { useRouter } from '@/lib/useRouter';
+import { applyPageMeta } from '@/lib/pageMeta';
+import { useEffect } from 'react';
 
 function App() {
   const { route, navigate } = useRouter();
+
+  useEffect(() => {
+    applyPageMeta(route);
+  }, [route]);
 
   const renderPage = () => {
     switch (route) {
