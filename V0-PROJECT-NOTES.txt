@@ -17,20 +17,37 @@ PROJECT
   Supabase was removed on purpose. Do not add it back or add any other backend.
 
 BUSINESS DETAILS (use these everywhere: JSON-LD, llms.txt, About, footer)
-- Business: Rimstone Diving (technical and cave diving instruction)
+- Business name: Rimstone Technical Diving (technical and cave diving
+  instruction). Use this exact name everywhere: site header/footer, page
+  titles, JSON-LD, llms.txt, Google Business Profile, Bing and any
+  directory listings. The domain is rimstonediving.com, but the domain is
+  not the business name.
 - Owner / instructor: Tim Perrault
 - Website: https://rimstonediving.com
 - Email: tim@rimstonediving.com (the contact form sends here too)
+- Phone: (206) 227-9715 (JSON-LD: +1-206-227-9715). Use this number
+  everywhere, including any Google Ads.
 - Location: Fort White, Florida 32038. No street address is published.
+  If a street address is ever added to Google Business Profile, add the
+  same address to the site's JSON-LD.
+- Hours: Mon-Fri 9:00-5:00.
 - Prices are NOT published on purpose (industry norm for technical/cave
   diving). Do not add prices.
+
+DIVE LOCATIONS (wording used on the site and Google Business Profile)
+- Florida: Ginnie Springs, Little River, Peacock Springs, Madison Blue Spring
+  ("Madison Blue Spring" is the correct name).
+- Mexico: "the Riviera Maya cenotes near Tulum and Playa del Carmen, Mexico".
+  Keep "Riviera Maya" and name both towns. Avoid "Yucatan Peninsula" (too
+  broad; it includes the Merida area, which isn't dived).
+- This wording is on the Services page, Home page and FAQ (src/data/faq.ts).
 
 SEO / GEO SETUP (already built, keep it working)
 - Every page is prerendered to real HTML at build time so search engines and
   AI search engines can read it without running JavaScript.
 - Build command (package.json):
     vite build && vite build --ssr src/entry-server.tsx --outDir dist-server
-    && node scripts/prerender.mjs
+    && node scripts/prerender.mjs && node scripts/indexnow.mjs
 - scripts/prerender.mjs renders each route to dist/[path]/index.html and
   generates sitemap.xml from the route list. It stops the build with an error
   if a page is missing from vercel.json.
@@ -43,6 +60,47 @@ SEO / GEO SETUP (already built, keep it working)
   FaqSection.tsx (home page only), not index.html.
 - The committed dist/ folder: if a test build changes it, restore it with git
   before committing.
+- index.html also has the Bing verification tag:
+  <meta name="msvalidate.01" content="5B11AF037910DE77107EF1E047F6B9D3" />
+  Do not remove it. index.html is the prerender template, so it applies to
+  every page.
+
+INDEXNOW (Bing, Yandex and others; Google does NOT use IndexNow)
+- Key file: public/33c376b633b6e9e20289f68f316e599f.txt (contains the key).
+  Do not delete or rename it.
+- scripts/indexnow.mjs runs at the end of the build and sends every URL in
+  the sitemap to IndexNow. It only runs when VERCEL_ENV is "production", so
+  preview builds and local builds skip it.
+- Publishing again sends the ping again. If v0 says "up to date" and there is
+  nothing to publish, no new ping is needed.
+
+DOMAINS (Vercel project settings > Domains)
+- rimstonediving.com = Production (the main address).
+- www.rimstonediving.com = 308 redirect to rimstonediving.com.
+- rimstone-v10.vercel.app = Production (leave as is).
+- DNS is run by Vercel (ns1/ns2.vercel-dns.com). DNS records, such as the
+  Google verification TXT record, are added in Vercel, not at a registrar.
+- Do not swap the redirect direction; all site code uses the non-www address.
+
+SEARCH ENGINE ACCOUNTS (already set up; do not redo)
+- Bing Webmaster Tools: site https://rimstonediving.com/, verified with the
+  meta tag above, and the sitemap has been submitted. IndexNow is on.
+- Google Search Console: Domain property for rimstonediving.com, verified
+  with a TXT record in Vercel DNS. Sitemap: https://rimstonediving.com/sitemap.xml
+- The Google account is tim@rimstonediving.com (a regular Google account
+  using an existing email, not Gmail; no Google Workspace is needed).
+- Google Business Profile: set up as a service-area business (no public
+  address), with service areas in North Florida only. Keep the Mexico towns
+  in the description only, not as service areas.
+  Services listed: CCR Training, Cave Diving Training, Guided Cave Diving,
+  Sidemount Training, Rebreather Training, KISS Sidewinder Training,
+  KISS Sidewinder2 Training, AP Inspiration Training, AP CCR Training,
+  Mentorship, Technical Dive Training, Demo Dives, Try Out Dives.
+- Reviews: ask each student for a Google review after their course (no
+  incentives). Once the review link exists, a "Leave a review" button can be
+  added to the site.
+- Google Ads: skipped for now. If tried later, use Expert Mode, a Search
+  campaign, specific keywords and a small budget.
 
 KEY FILES
 - src/lib/routes.ts    route list (id, path, label, short, priority); sitemap source
@@ -71,7 +129,9 @@ Read and follow ADDING-A-PAGE.md in the repo root, and confirm every item:
  9. Images             - descriptive alt text, width and height on every <img>
 10. Verify             - run the build, check dist/[path]/index.html has the
                          title, description, and content
-After publishing: resubmit https://rimstonediving.com/sitemap.xml in Google Search Console.
+After publishing: resubmit https://rimstonediving.com/sitemap.xml in Google Search Console
+and use URL Inspection > Request indexing for the new page. Bing is notified
+automatically by IndexNow on publish.
 
 PROMPT TO ADD A PAGE (fill in the brackets)
 Add a new page: [Page name] at /[url-path].
