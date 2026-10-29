@@ -1,4 +1,5 @@
 import { ArrowRight, Compass, LifeBuoy } from 'lucide-react';
+import { ABOVE_THE_FOLD, PEXELS_SIZE } from '@/lib/images';
 
 type ServicesProps = {
   navigate: (page: 'contact') => void;
@@ -30,6 +31,8 @@ export default function Services({ navigate }: ServicesProps) {
         <img
           src="https://images.pexels.com/photos/10519070/pexels-photo-10519070.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
           alt="Professional diving services"
+          {...PEXELS_SIZE}
+          {...ABOVE_THE_FOLD}
           className="absolute inset-0 h-full w-full object-cover"
         />
 

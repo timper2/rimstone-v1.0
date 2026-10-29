@@ -1,6 +1,7 @@
 import { ArrowRight, Check, ShieldCheck } from 'lucide-react';
 import type { CourseContent } from '@/data/courses';
 import type { NavigateFn } from '@/lib/useRouter';
+import { ABOVE_THE_FOLD, BELOW_THE_FOLD, imageSize } from '@/lib/images';
 import CtaBanner from '@/components/CtaBanner';
 
 interface CoursePageProps {
@@ -20,6 +21,8 @@ export default function CoursePage({ content, navigate }: CoursePageProps) {
         <img
           src={content.heroImage}
           alt={content.title}
+          {...imageSize(content.heroImage)}
+          {...ABOVE_THE_FOLD}
           className="absolute inset-0 h-full w-full object-cover"
           style={{
             objectPosition: content.heroImagePosition,
@@ -264,6 +267,8 @@ export default function CoursePage({ content, navigate }: CoursePageProps) {
               <img
                 src={g.src}
                 alt={g.caption}
+                {...imageSize(g.src)}
+                {...BELOW_THE_FOLD}
                 className="h-72 w-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent" />

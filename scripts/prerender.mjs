@@ -6,7 +6,7 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const distDir = join(root, 'dist');
 const serverDir = join(root, 'dist-server');
 
-const { render, pages } = await import(pathToFileURL(join(serverDir, 'entry-server.js')).href);
+const { render, pages, notFoundPage } = await import(pathToFileURL(join(serverDir, 'entry-server.js')).href);
 const template = await readFile(join(distDir, 'index.html'), 'utf8');
 
 // vercel.json is read before the build runs, so it can't import the routes list.
@@ -30,7 +30,7 @@ function setAttr(html, pattern, attr, value) {
   return html.replace(pattern, (tag) => tag.replace(new RegExp(`${attr}="[^"]*"`), `${attr}="${escapeHtml(value)}"`));
 }
 
-for (const page of pages) {
+function renderPage(page) {
   let html = template.replace('<div id="root"></div>', `<div id="root">${render(page.path)}</div>`);
   html = html.replace(/<title>[^<]*<\/title>/, `<title>${escapeHtml(page.title)}</title>`);
   html = setAttr(html, /<meta name="description"[^>]*>/, 'content', page.description);
@@ -40,12 +40,23 @@ for (const page of pages) {
   html = setAttr(html, /<meta property="og:url"[^>]*>/, 'content', page.url);
   html = setAttr(html, /<meta name="twitter:title"[^>]*>/, 'content', page.title);
   html = setAttr(html, /<meta name="twitter:description"[^>]*>/, 'content', page.description);
+  return html;
+}
 
+for (const page of pages) {
+  const html = renderPage(page);
   const outFile = page.path === '/' ? join(distDir, 'index.html') : join(distDir, page.path.slice(1), 'index.html');
   await mkdir(dirname(outFile), { recursive: true });
   await writeFile(outFile, html);
   console.log(`prerendered ${page.path}`);
 }
+
+// Served with a real 404 status by vercel.json. No canonical, and noindex, so it never competes with real pages.
+const notFoundHtml = renderPage(notFoundPage)
+  .replace(/\s*<link rel="canonical"[^>]*>/, '')
+  .replace('</head>', '    <meta name="robots" content="noindex" />\n  </head>');
+await writeFile(join(distDir, '404.html'), notFoundHtml);
+console.log('prerendered 404.html');
 
 const lastmod = new Date().toISOString().slice(0, 10);
 const sitemap = [

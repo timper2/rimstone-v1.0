@@ -64,7 +64,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     eyebrow: 'Configuration mastery',
     title: 'Sidemount Diving',
     subtitle: 'Streamlined, balanced and self-sufficient diving with cylinders mounted at your sides.',
-    heroImage: '/images/sidemount-enhanced.jpg',
+    heroImage: '/images/sidemount-enhanced.webp',
     heroImagePosition: 'center 22%',
     heroImageZoom: 1,
  heroLockAspect: true,
@@ -125,11 +125,11 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     },
     gallery: [
       {
-        src: '/images/sidemountJVC.jpg',
+        src: '/images/sidemountJVC.webp',
         caption: 'Balanced trim in open water',
       },
       {
-        src: '/images/SMharnesssetup.jpeg',
+        src: '/images/SMharnesssetup.webp',
         caption: 'Rigging the harness before a dive',
       },
     ],
@@ -141,7 +141,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     title: 'Cave Diving',
     subtitle: 'Explore the flooded passages beyond the light with disciplined training and unshakeable procedures.',
     heroImage:
-      '/images/cavediversentrance.jpg',
+      '/images/cavediversentrance.webp',
     intro: [
       'Cave diving is the most demanding and most rewarding form of diving. There is no direct route to the surface, so every skill, every piece of gear and every decision must be deliberate and redundant.',
       'Training progresses in careful stages. You build line-handling, navigation, gas planning and failure management until moving calmly through an overhead environment becomes second nature.',
@@ -197,11 +197,11 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     ],
     gallery: [
       {
-        src: '/images/cavedivers.jpg',
+        src: '/images/cavedivers.webp',
         caption: 'Navigating a flooded passage',
       },
       {
-        src: '/images/CCRTim.jpeg',
+        src: '/images/CCRTim.webp',
         caption: 'Entering the cave: where preparation meets the unknown',
       },
     ],
@@ -213,7 +213,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     title: 'Technical Diving',
     subtitle: 'Extend your range with decompression, mixed gases and the discipline that makes deep dives repeatable.',
     heroImage:
-      '/images/doubles.jpeg',
+      '/images/doubles.webp',
     intro: [
       'Technical diving opens up depths, wrecks and durations that lie beyond recreational limits. It demands planned decompression, multiple gases and a team that operates with precision.',
       'These courses build the planning, gas management and problem-solving skills that let you treat a demanding dive as a series of controlled, rehearsed steps rather than a gamble.',
@@ -287,7 +287,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     eyebrow: 'Closed-circuit diving',
     title: 'Rebreather Courses',
     subtitle: 'Closed-circuit training from your first loop dive to mixed-gas exploration, on the KISS Sidewinder and AP Inspiration.',
-    heroImage: '/images/CCRHeader.jpeg',
+    heroImage: '/images/CCRHeader.webp',
     intro: [
       'A closed-circuit rebreather recycles your breathing gas, removing carbon dioxide and adding oxygen so almost nothing is wasted. The result is dramatically longer dives, warm moist gas and near-silent, bubble-free presence in the water.',
       'Rebreather training is a progression in its own right, independent of any overhead environment. You start with the fundamentals of the loop and build through decompression and mixed-gas diving, with cave-specific CCR work as an later specialism for those who want it. I teach on both the KISS Sidewinder and the AP Inspiration, so you train on the unit you intend to dive.',
@@ -367,11 +367,11 @@ points: [
     ],
     gallery: [
       {
-        src: '/images/CCRJVC.jpeg',
+        src: '/images/CCRJVC.webp',
         caption: 'Silent, bubble-free presence',
       },
       {
-        src: '/images/CCRPlanning.jpg',
+        src: '/images/CCRPlanning.webp',
         caption: 'Planning the dive before entering the water',
       },
     ],

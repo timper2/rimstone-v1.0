@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { ABOVE_THE_FOLD, PEXELS_SIZE } from '@/lib/images';
 import {
   AlertCircle,
   CheckCircle2,
@@ -62,6 +63,8 @@ export default function Contact() {
         <img
           src="https://pexels.com"
           alt="Diver silhouette in sunlit water"
+          {...PEXELS_SIZE}
+          {...ABOVE_THE_FOLD}
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/75 to-slate-950/40" />

@@ -139,6 +139,24 @@ Content: [what the page is about, or paste the copy].
 Show it in the navbar: [yes/no]. Show it in the footer: [yes/no].
 Follow ADDING-A-PAGE.md and confirm every checklist item when you are done.
 
+SEO / PERFORMANCE SETUP
+- Photos: served as WebP from public/images (resized). Keep the original JPEGs
+  out of page code. New photos should be converted to WebP before adding.
+- Every <img> needs width, height, and loading="lazy" (except the first,
+  above-the-fold image on a page, which uses loading="eager").
+- Browser-tab icon: public/favicon.svg, plus PNG/ICO versions, linked in
+  index.html.
+- 404 page: src/pages/NotFound.tsx, built to dist/404.html. It is marked
+  noindex and is intentionally NOT in the sitemap, nav, footer, or llms.txt.
+
+BUSINESS PROFILE LINKS (sameAs)
+- Listed in index.html JSON-LD, under the LocalBusiness block, "sameAs".
+- Current links:
+    Google Business Profile: https://share.google/9ArQnVorDEruNenMv
+- Still to add when available: Facebook, Instagram, YouTube, and agency
+  instructor listing URLs. Add each as another line in the "sameAs" list,
+  and also add the same links to the Google Business Profile ("Add profiles").
+
 OTHER
 - A leftover env variable NEXT_PUBLIC_DEV_SUPABASE_REDIRECT_URL may still
   exist in Vercel. Nothing uses it; it is safe to delete.

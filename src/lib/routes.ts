@@ -7,7 +7,11 @@ export type RouteId =
   | 'demo'
   | 'contact'
   | 'services'
-  | 'about';
+  | 'about'
+  | 'notfound';
+
+/** Not in ROUTES, so it stays out of the navbar and sitemap. Prerendered to dist/404.html. */
+export const NOT_FOUND_PATH = '/404';
 
 export interface RouteDef {
   id: RouteId;
@@ -33,10 +37,11 @@ export const ROUTES: RouteDef[] = [
 
 export function pathToRoute(path: string): RouteId {
   const match = ROUTES.find((r) => r.path === path);
-  return match ? match.id : 'home';
+  return match ? match.id : 'notfound';
 }
 
 export function routeToPath(id: RouteId): string {
+  if (id === 'notfound') return NOT_FOUND_PATH;
   const match = ROUTES.find((r) => r.id === id);
   return match ? match.path : '/';
 }

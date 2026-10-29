@@ -6,6 +6,7 @@ import Services from '@/pages/Services';
 import TryOut from '@/pages/TryOut';
 import Contact from '@/pages/Contact';
 import About from '@/pages/About';
+import NotFound from '@/pages/NotFound';
 import { COURSES } from '@/data/courses';
 import { useRouter } from '@/lib/useRouter';
 import { applyPageMeta } from '@/lib/pageMeta';
@@ -36,6 +37,8 @@ function App({ initialPath }: { initialPath?: string }) {
         return <Contact />;
       case 'about':
         return <About />;
+      case 'notfound':
+        return <NotFound navigate={navigate} />;
       default:
         return <Home navigate={navigate} />;
     }

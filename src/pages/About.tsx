@@ -1,4 +1,5 @@
 import { MapPin, Waves } from 'lucide-react';
+import { ABOVE_THE_FOLD, imageSize } from '@/lib/images';
 
 export default function About() {
   return (
@@ -13,13 +14,10 @@ export default function About() {
         <div className="mt-10 grid gap-10 lg:grid-cols-[auto_1fr] lg:items-start">
           <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-900/40">
             <img
-              src="/images/abouttim.jpeg"
+              src="/images/abouttim.webp"
               alt="Tim diving at the waterline in a cave"
-              width="1408"
-              height="1750"
-              loading="eager"
-              {...{ fetchpriority: 'high' }}
-              decoding="async"
+              {...imageSize('/images/abouttim.webp')}
+              {...ABOVE_THE_FOLD}
               className="block h-80 w-full object-cover"
             />
             <div className="flex items-center gap-3 p-5 text-accent">
