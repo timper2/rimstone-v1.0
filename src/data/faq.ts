@@ -7,7 +7,7 @@ export const FAQ: FaqItem[] = [
   {
     question: 'Where are Rimstone courses taught?',
     answer:
-      "Training is based in Fort White, Florida, in the heart of North Florida's Cave Country. Open-water, cavern and cave dives take place in the North Florida springs. Cave guiding is also offered in the Riviera Maya cenotes in Mexico.",
+      "Training is based in Fort White, Florida, in the heart of North Florida's Cave Country. Open-water, cavern and cave dives take place in the North Florida springs, including Ginnie Springs, Little River, Peacock Springs and Madison Blue Spring. Cave guiding is also offered in the Riviera Maya cenotes near Tulum and Playa del Carmen, Mexico.",
   },
   {
     question: 'Which certification agencies do you teach?',
