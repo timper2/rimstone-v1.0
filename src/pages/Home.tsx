@@ -602,7 +602,7 @@ export default function Home({ navigate }: HomeProps) {
                   </li>
                   <li className="flex gap-3 text-left">
                     <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
-                    <p><span className="font-semibold text-white">Analytical Focus:</span> Relying on strict team cross-checks, continuous guideline awareness, and sharp situational judgment with primary training in Florida Cave Country and the Riviera Maya.</p>
+                    <p><span className="font-semibold text-white">Analytical Focus:</span> Relying on strict team cross-checks, continuous guideline awareness, and sharp situational judgment with primary training in Florida Cave Country and the Riviera Maya cenotes near Tulum and Playa del Carmen.</p>
                   </li>
                 </ul>
                 <a
@@ -729,7 +729,7 @@ export default function Home({ navigate }: HomeProps) {
                   Cave Guiding
                 </h3>
                 <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
-                  Sites: Florida Springs & Riviera Maya Cenotes
+                  Sites: Florida Springs & Riviera Maya Cenotes (Tulum & Playa del Carmen)
                 </p>
                 <p itemProp="description" className="text-sm leading-relaxed text-slate-300">
                   Guided cave excursions matched to your certification and comfort level, with full

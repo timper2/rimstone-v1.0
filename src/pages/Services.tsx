@@ -9,7 +9,7 @@ const services = [
     icon: Compass,
     title: 'Cave Guiding',
     items: [
-      'Custom overhead guiding and logistics tailored precisely to your configuration and comfort level across North Florida spring networks and the deep cenote systems of the Riviera Maya.',
+      'Custom overhead guiding and logistics tailored precisely to your configuration and comfort level across North Florida spring networks, including Ginnie Springs, Little River, Peacock Springs and Madison Blue Spring, and the deep cenote systems of the Riviera Maya near Tulum and Playa del Carmen, Mexico.',
       'Full logistics coordination, site briefing, environmental gas planning, and international trip support.',
     ],
   },
@@ -47,7 +47,7 @@ export default function Services({ navigate }: ServicesProps) {
             </h1>
 
             <p className="max-w-2xl text-lg leading-relaxed text-slate-300 sm:text-xl">
-              Whether you need a custom environmental guide or precision hardware mentorship, I offer tailored services for technical and cave divers pursuing excellence across North Florida&apos;s spring networks, the deep cenotes of the Riviera Maya, and specialized open-water configurations.
+              Whether you need a custom environmental guide or precision hardware mentorship, I offer tailored services for technical and cave divers pursuing excellence across North Florida&apos;s spring networks, the deep cenotes of the Riviera Maya near Tulum and Playa del Carmen, and specialized open-water configurations.
             </p>
           </div>
         </div>
