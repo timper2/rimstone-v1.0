@@ -17,9 +17,11 @@ PROJECT
   Supabase was removed on purpose. Do not add it back or add any other backend.
 
 BUSINESS DETAILS (use these everywhere: JSON-LD, llms.txt, About, footer)
-- Business: Rimstone Diving (technical and cave diving instruction)
-  The JSON-LD and Google Business Profile use the name
-  "Rimstone Technical Diving". Keep the name identical everywhere.
+- Business name: Rimstone Technical Diving (technical and cave diving
+  instruction). Use this exact name everywhere: site header/footer, page
+  titles, JSON-LD, llms.txt, Google Business Profile, Bing and any
+  directory listings. The domain is rimstonediving.com, but the domain is
+  not the business name.
 - Owner / instructor: Tim Perrault
 - Website: https://rimstonediving.com
 - Email: tim@rimstonediving.com (the contact form sends here too)
