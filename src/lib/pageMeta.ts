@@ -46,6 +46,10 @@ const PAGE_META: Record<RouteId, { title: string; description: string }> = {
     title: `Contact · ${SITE_NAME}`,
     description: 'Book a sidemount, cave, technical or rebreather course. Email tim@rimstonediving.com or call/text +1 (206) 227-9715.',
   },
+  notfound: {
+    title: `Page Not Found · ${SITE_NAME}`,
+    description: 'This page does not exist. Browse sidemount, cave, technical and rebreather courses at Rimstone Technical Diving.',
+  },
 };
 
 function setMeta(selector: string, attr: 'content' | 'href', value: string) {
@@ -67,4 +71,15 @@ export function applyPageMeta(route: RouteId) {
   setMeta('meta[property="og:url"]', 'content', url);
   setMeta('meta[name="twitter:title"]', 'content', title);
   setMeta('meta[name="twitter:description"]', 'content', description);
+
+  const existingRobots = document.querySelector('meta[name="robots"][data-notfound]');
+  if (route === 'notfound' && !existingRobots) {
+    const robots = document.createElement('meta');
+    robots.name = 'robots';
+    robots.content = 'noindex';
+    robots.dataset.notfound = '';
+    document.head.appendChild(robots);
+  } else if (route !== 'notfound') {
+    existingRobots?.remove();
+  }
 }

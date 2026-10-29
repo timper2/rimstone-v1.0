@@ -1,5 +1,6 @@
 import { ArrowRight, Clock, Layers, Package, Sunrise, Sunset, Waves, Wind, Gauge } from 'lucide-react';
 import type { NavigateFn } from '@/lib/useRouter';
+import { ABOVE_THE_FOLD, BELOW_THE_FOLD, PEXELS_SIZE } from '@/lib/images';
 import CtaBanner from '@/components/CtaBanner';
 
 interface TryOutProps {
@@ -62,6 +63,8 @@ export default function TryOut({ navigate }: TryOutProps) {
         <img
           src="https://images.pexels.com/photos/35541060/pexels-photo-35541060.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
           alt="Scuba gear prepared for a diving session"
+          {...PEXELS_SIZE}
+          {...ABOVE_THE_FOLD}
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-slate-950/40" />
@@ -205,6 +208,8 @@ export default function TryOut({ navigate }: TryOutProps) {
           <img
             src="https://images.pexels.com/photos/13022664/pexels-photo-13022664.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
             alt="Diving tanks ready on the dock"
+            {...PEXELS_SIZE}
+            {...BELOW_THE_FOLD}
             className="absolute inset-0 h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-slate-950/80" />

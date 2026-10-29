@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ArrowRight, Compass, Gauge, LifeBuoy, Waves, Wind } from 'lucide-react';
 import { COURSES } from '@/data/courses';
 import type { NavigateFn } from '@/lib/useRouter';
+import { ABOVE_THE_FOLD, BELOW_THE_FOLD, imageSize } from '@/lib/images';
 import CtaBanner from '@/components/CtaBanner';
 import FaqSection from '@/components/FaqSection';
 import LayoutTabs, { type LayoutId } from '@/components/LayoutTabs';
@@ -35,8 +36,10 @@ export default function Home({ navigate }: HomeProps) {
     <div className="animate-fade-in">
       <section className="relative flex min-h-screen items-center overflow-hidden">
         <img
-          src="/images/heropicture.jpeg"
+          src="/images/heropicture.webp"
           alt="Drysuit diver climbing the ladder of a dive boat"
+          {...imageSize('/images/heropicture.webp')}
+          {...ABOVE_THE_FOLD}
           className="absolute inset-0 h-full w-full object-cover object-[center_30%]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-slate-950/40" />
@@ -118,8 +121,10 @@ export default function Home({ navigate }: HomeProps) {
           <div className="relative">
             <div className="h-full overflow-hidden rounded-3xl border border-white/10">
               <img
-                src="/images/homepagefirstpicture.jpg"
+                src="/images/homepagefirstpicture.webp"
                 alt="Diver swimming through a cave passage"
+                {...imageSize('/images/homepagefirstpicture.webp')}
+                {...BELOW_THE_FOLD}
                 className="aspect-[4/5] w-full object-cover object-[55%_50%] md:aspect-auto md:h-full"
               />
             </div>
@@ -203,6 +208,8 @@ export default function Home({ navigate }: HomeProps) {
                 <img
                   src={COURSES.sidemount.cardImage ?? COURSES.sidemount.heroImage}
                   alt="Sidemount diver in trim with cylinders mounted at the hips"
+                  {...imageSize(COURSES.sidemount.cardImage ?? COURSES.sidemount.heroImage)}
+                  {...BELOW_THE_FOLD}
                   className="h-52 w-full object-cover"
                 />
                 <div className="flex flex-1 flex-col gap-3 p-8">
@@ -241,6 +248,8 @@ export default function Home({ navigate }: HomeProps) {
                 <img
                   src={COURSES.cave.heroImage}
                   alt="Cave diver following a guideline through a flooded passage"
+                  {...imageSize(COURSES.cave.heroImage)}
+                  {...BELOW_THE_FOLD}
                   className="h-52 w-full object-cover"
                 />
                 <div className="flex flex-1 flex-col gap-3 p-8">
@@ -279,6 +288,8 @@ export default function Home({ navigate }: HomeProps) {
                 <img
                   src={COURSES.technical.heroImage}
                   alt="Technical diver with decompression stage cylinders"
+                  {...imageSize(COURSES.technical.heroImage)}
+                  {...BELOW_THE_FOLD}
                   className="h-52 w-full object-cover"
                 />
                 <div className="flex flex-1 flex-col gap-3 p-8">
@@ -317,6 +328,8 @@ export default function Home({ navigate }: HomeProps) {
                 <img
                   src={COURSES.rebreather.heroImage}
                   alt="Closed-circuit rebreather diver underwater"
+                  {...imageSize(COURSES.rebreather.heroImage)}
+                  {...BELOW_THE_FOLD}
                   className="h-52 w-full object-cover"
                 />
                 <div className="flex flex-1 flex-col gap-3 p-8">
