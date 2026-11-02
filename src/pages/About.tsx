@@ -30,13 +30,13 @@ export default function About() {
           </div>
           <div className="space-y-6 text-base leading-relaxed text-slate-300 sm:text-lg">
             <p>
-              Rimstone is led by Tim Perrault, a TDI Technical Instructor and PADI Technical Instructor Trainer based in Fort White, Florida—in the heart of Cave Country
+              Rimstone Technical Diving is a dive training business in Fort White, Florida—in the heart of Cave Country. It is led by Tim Perrault, a TDI Technical Instructor and PADI Technical Instructor Trainer.
             </p>
             <p>
               Tim teaches a comprehensive range of technical and cave diving tracks, spanning open-circuit decompression configurations, sidemount platforms, and closed-circuit rebreather (CCR) systems, with a particular focus on the KISS Sidewinder and AP Inspiration architectures. Instruction covers your entire progression from foundational double-tank stability and advanced nitrox gas planning to full cave diving and deep mixed-gas profiles.
             </p>
             <p>
-              In the overhead world, a rimstone is a delicate, naturally occurring stone dam formed over thousands of years by slow, deliberate mineral deposits. It represents the exact baseline of our instructional philosophy: elite stability, structural resilience, and high-level technical capability are never rushed—they are built cleanly, piece by piece, one dive at a time.
+              Why the name? In the overhead world, a rimstone is a delicate, naturally occurring stone dam formed over thousands of years by slow, deliberate mineral deposits. It represents the exact baseline of our instructional philosophy: elite stability, structural resilience, and high-level technical capability are never rushed—they are built cleanly, piece by piece, one dive at a time.
             </p>
           </div>
         </div>

@@ -63,8 +63,8 @@ export default function Home({ navigate }: HomeProps) {
           <h1 className="mt-6 max-w-3xl animate-fade-up font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
             Cave, CCR & Technical Diving Instruction — Fort White, Florida
           </h1>
-          <p className="mt-6 max-w-2xl animate-fade-up text-lg leading-relaxed text-slate-300 sm:text-xl">
-            Built one dive at a time.
+          <p className="mt-6 max-w-2xl animate-fade-up text-pretty text-lg leading-relaxed text-slate-300 sm:text-xl">
+            Rimstone Technical Diving is a sidemount, cave, technical and CCR rebreather dive school in Fort White, Florida. Built one dive at a time.
           </p>
           <div className="mt-9 flex animate-fade-up flex-wrap gap-4">
             <button

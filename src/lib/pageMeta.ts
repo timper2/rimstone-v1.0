@@ -5,7 +5,7 @@ const SITE_NAME = 'Rimstone Technical Diving';
 
 const PAGE_META: Record<RouteId, { title: string; description: string }> = {
   home: {
-    title: `${SITE_NAME} · Built one dive at a time.`,
+    title: `${SITE_NAME} · Cave & CCR Dive School, Fort White FL`,
     description:
       'Sidemount, cave, technical and CCR rebreather diving courses in Fort White, Florida, taught by a TDI Technical Instructor and PADI Technical Instructor Trainer.',
   },
