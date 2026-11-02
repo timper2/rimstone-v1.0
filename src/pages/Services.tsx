@@ -1,5 +1,7 @@
 import { ArrowRight, Compass, LifeBuoy } from 'lucide-react';
 import { ABOVE_THE_FOLD, PEXELS_SIZE } from '@/lib/images';
+import FaqSection from '@/components/FaqSection';
+import { SERVICES_FAQ } from '@/data/servicesFaq';
 
 type ServicesProps = {
   navigate: (page: 'contact') => void;
@@ -10,7 +12,7 @@ const services = [
     icon: Compass,
     title: 'Cave Guiding',
     items: [
-      'Custom overhead guiding and logistics tailored precisely to your configuration and comfort level across North Florida spring networks, including Ginnie Springs, Little River, Peacock Springs and Madison Blue Spring, and the deep cenote systems of the Riviera Maya near Tulum and Playa del Carmen, Mexico.',
+      'Guided cave dives for certified cave divers, based in Fort White and tailored to your certification, configuration (backmount, sidemount or CCR) and comfort level across the North Florida spring networks, including Ginnie Springs, Little River, Peacock Springs and Madison Blue Spring, and the cenote systems of the Riviera Maya near Tulum and Playa del Carmen, Mexico.',
       'Full logistics coordination, site briefing, environmental gas planning, and international trip support.',
     ],
   },
@@ -42,15 +44,15 @@ export default function Services({ navigate }: ServicesProps) {
         <div className="relative mx-auto w-full max-w-7xl container-px pt-28">
           <div className="flex animate-fade-up flex-col gap-6">
             <p className="font-display text-sm font-semibold uppercase tracking-[0.25em] text-accent">
-              Professional Services
+              Cave Guiding &amp; Mentoring · Fort White, Florida
             </p>
 
-            <h1 className="max-w-3xl font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
-              Guidance for every depth.
+            <h1 className="max-w-3xl text-balance font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
+              Guided cave dives in North Florida.
             </h1>
 
-            <p className="max-w-2xl text-lg leading-relaxed text-slate-300 sm:text-xl">
-              Whether you need a custom environmental guide or precision hardware mentorship, I offer tailored services for technical and cave divers pursuing excellence across North Florida&apos;s spring networks, the deep cenotes of the Riviera Maya near Tulum and Playa del Carmen, and specialized open-water configurations.
+            <p className="max-w-2xl text-pretty text-lg leading-relaxed text-slate-300 sm:text-xl">
+              Already cave certified and visiting Fort White? I guide certified cave divers through the North Florida springs, including Ginnie Springs, Little River, Peacock Springs and Madison Blue Spring, as well as the cenotes of the Riviera Maya near Tulum and Playa del Carmen. I also offer one-on-one mentoring for technical divers.
             </p>
           </div>
         </div>
@@ -97,6 +99,13 @@ export default function Services({ navigate }: ServicesProps) {
           })}
         </div>
       </section>
+
+      <FaqSection
+        items={SERVICES_FAQ}
+        schemaId="https://rimstonediving.com/services#faq"
+        heading="Cave guiding questions"
+        intro="For certified cave divers planning a trip to Fort White and the North Florida springs."
+      />
 
       <section className="border-t border-white/10 bg-slate-900/30">
         <div className="mx-auto max-w-7xl container-px py-20 sm:py-24">

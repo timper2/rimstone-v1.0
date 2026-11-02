@@ -57,7 +57,11 @@ SEO / GEO SETUP (already built, keep it working)
 - index.html: JSON-LD structured data (organization, courses).
 - Homepage has a crawlable FAQ section (src/data/faq.ts,
   src/components/FaqSection.tsx). The FAQPage JSON-LD is rendered by
-  FaqSection.tsx (home page only), not index.html.
+  FaqSection.tsx, not index.html.
+- Services page has its own cave guiding FAQ (src/data/servicesFaq.ts), aimed
+  at certified cave divers visiting Fort White. It reuses FaqSection with props
+  and its own schema id (https://rimstonediving.com/services#faq). Keep the
+  answers factual and in line with the Services page and llms.txt.
 - The committed dist/ folder: if a test build changes it, restore it with git
   before committing.
 - index.html also has the Bing verification tag:

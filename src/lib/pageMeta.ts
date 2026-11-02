@@ -34,8 +34,8 @@ const PAGE_META: Record<RouteId, { title: string; description: string }> = {
     description: 'Introductory try-dive experiences for divers curious about sidemount or rebreather diving in Fort White, Florida.',
   },
   services: {
-    title: `Cave Guiding & Mentoring · ${SITE_NAME}`,
-    description: 'Cave guiding in the North Florida springs and one-on-one mentoring for certified technical and cave divers.',
+    title: `Cave Guiding in Fort White & North Florida · ${SITE_NAME}`,
+    description: 'Guided cave dives for certified cave divers visiting Fort White, Florida: Ginnie Springs, Little River, Peacock Springs and Madison Blue. Backmount, sidemount or CCR, plus one-on-one mentoring.',
   },
   about: {
     title: `About · ${SITE_NAME}`,
