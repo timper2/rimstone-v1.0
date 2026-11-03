@@ -13,7 +13,7 @@ const services = [
     title: 'Cave Guiding',
     items: [
       'Guided cave dives for certified cave divers, based in Fort White and tailored to your certification, configuration (backmount, sidemount or CCR) and comfort level across the North Florida spring networks, including Ginnie Springs, Little River, Peacock Springs, Cow Springs and Madison Blue Spring, plus many other systems in the region, and the cenote systems of the Riviera Maya near Tulum and Playa del Carmen, Mexico.',
-      "Full logistics coordination, site briefing, environmental gas planning, and international trip support. I'll handle as much or as little of the line work as you want. It's your vacation, and I'm here to help.",
+      "Full logistics coordination, site briefing, environmental gas planning, and international trip support. I'll do as much or as little of the work as you want. It's your dive, and I'm here to help.",
     ],
   },
   {

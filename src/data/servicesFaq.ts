@@ -24,7 +24,7 @@ export const SERVICES_FAQ: FaqItem[] = [
   {
     question: 'What does a guided cave dive include?',
     answer:
-      "A site briefing, dive and gas planning for the system, logistics coordination and an experienced local guide in the water with you. I'll do as much or as little of the line work as you want. It's your vacation, and I'm here to help.",
+      "A site briefing, dive and gas planning for the system, logistics coordination and an experienced local guide in the water with you. I'll do as much or as little of the work as you want. It's your dive, and I'm here to help.",
   },
   {
     question: 'Do you guide in Mexico too?',
