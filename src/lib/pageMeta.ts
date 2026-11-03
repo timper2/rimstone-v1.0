@@ -5,7 +5,7 @@ const SITE_NAME = 'Rimstone Technical Diving';
 
 const PAGE_META: Record<RouteId, { title: string; description: string }> = {
   home: {
-    title: `${SITE_NAME} · Built one dive at a time.`,
+    title: `${SITE_NAME} · Cave & CCR Dive School, Fort White FL`,
     description:
       'Sidemount, cave, technical and CCR rebreather diving courses in Fort White, Florida, taught by a TDI Technical Instructor and PADI Technical Instructor Trainer.',
   },
@@ -34,8 +34,8 @@ const PAGE_META: Record<RouteId, { title: string; description: string }> = {
     description: 'Introductory try-dive experiences for divers curious about sidemount or rebreather diving in Fort White, Florida.',
   },
   services: {
-    title: `Cave Guiding & Mentoring · ${SITE_NAME}`,
-    description: 'Cave guiding in the North Florida springs and one-on-one mentoring for certified technical and cave divers.',
+    title: `Cave Guiding in Fort White & North Florida · ${SITE_NAME}`,
+    description: 'Guided cave dives for certified divers in North Florida Cave Country from Fort White: Ginnie, Little River, Peacock, Cow Springs, Madison Blue and more. Backmount, sidemount or CCR.',
   },
   about: {
     title: `About · ${SITE_NAME}`,

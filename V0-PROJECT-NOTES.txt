@@ -35,8 +35,13 @@ BUSINESS DETAILS (use these everywhere: JSON-LD, llms.txt, About, footer)
   diving). Do not add prices.
 
 DIVE LOCATIONS (wording used on the site and Google Business Profile)
-- Florida: Ginnie Springs, Little River, Peacock Springs, Madison Blue Spring
-  ("Madison Blue Spring" is the correct name).
+- Florida: Ginnie Springs, Little River, Peacock Springs, Cow Springs,
+  Madison Blue Spring ("Madison Blue Spring" is the correct name), plus
+  "many other systems" in the region.
+- Guiding is for visitors anywhere in Cave Country, not only Fort White.
+  Fort White is the base. Don't word copy as "staying in Fort White".
+- Guided dives: the guide does as much or as little of the work as the
+  diver wants ("It's your dive, and I'm here to help.").
 - Mexico: "the Riviera Maya cenotes near Tulum and Playa del Carmen, Mexico".
   Keep "Riviera Maya" and name both towns. Avoid "Yucatan Peninsula" (too
   broad; it includes the Merida area, which isn't dived).
@@ -57,7 +62,11 @@ SEO / GEO SETUP (already built, keep it working)
 - index.html: JSON-LD structured data (organization, courses).
 - Homepage has a crawlable FAQ section (src/data/faq.ts,
   src/components/FaqSection.tsx). The FAQPage JSON-LD is rendered by
-  FaqSection.tsx (home page only), not index.html.
+  FaqSection.tsx, not index.html.
+- Services page has its own cave guiding FAQ (src/data/servicesFaq.ts), aimed
+  at certified cave divers visiting Fort White. It reuses FaqSection with props
+  and its own schema id (https://rimstonediving.com/services#faq). Keep the
+  answers factual and in line with the Services page and llms.txt.
 - The committed dist/ folder: if a test build changes it, restore it with git
   before committing.
 - index.html also has the Bing verification tag:
