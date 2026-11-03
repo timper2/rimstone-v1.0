@@ -35,8 +35,13 @@ BUSINESS DETAILS (use these everywhere: JSON-LD, llms.txt, About, footer)
   diving). Do not add prices.
 
 DIVE LOCATIONS (wording used on the site and Google Business Profile)
-- Florida: Ginnie Springs, Little River, Peacock Springs, Madison Blue Spring
-  ("Madison Blue Spring" is the correct name).
+- Florida: Ginnie Springs, Little River, Peacock Springs, Cow Springs,
+  Madison Blue Spring ("Madison Blue Spring" is the correct name), plus
+  "many other systems" in the region.
+- Guiding is for visitors anywhere in Cave Country, not only Fort White.
+  Fort White is the base. Don't word copy as "staying in Fort White".
+- Guided dives: the guide does as much or as little of the line work as the
+  diver wants ("It's your vacation, and I'm here to help.").
 - Mexico: "the Riviera Maya cenotes near Tulum and Playa del Carmen, Mexico".
   Keep "Riviera Maya" and name both towns. Avoid "Yucatan Peninsula" (too
   broad; it includes the Merida area, which isn't dived).

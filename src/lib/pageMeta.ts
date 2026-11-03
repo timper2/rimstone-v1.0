@@ -35,7 +35,7 @@ const PAGE_META: Record<RouteId, { title: string; description: string }> = {
   },
   services: {
     title: `Cave Guiding in Fort White & North Florida · ${SITE_NAME}`,
-    description: 'Guided cave dives for certified cave divers visiting Fort White, Florida: Ginnie Springs, Little River, Peacock Springs and Madison Blue. Backmount, sidemount or CCR, plus one-on-one mentoring.',
+    description: 'Guided cave dives for certified divers in North Florida Cave Country from Fort White: Ginnie, Little River, Peacock, Cow Springs, Madison Blue and more. Backmount, sidemount or CCR.',
   },
   about: {
     title: `About · ${SITE_NAME}`,

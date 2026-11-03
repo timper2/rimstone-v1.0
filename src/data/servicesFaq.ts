@@ -2,9 +2,9 @@ import type { FaqItem } from './faq';
 
 export const SERVICES_FAQ: FaqItem[] = [
   {
-    question: "I'm cave certified and staying in Fort White. Can you guide me in the North Florida caves?",
+    question: "I'm cave certified and visiting North Florida's Cave Country. Can you guide me in the caves?",
     answer:
-      "Yes. Rimstone Technical Diving is based in Fort White, Florida, a short drive from Ginnie Springs, Little River, Peacock Springs and Madison Blue Spring. Guided cave dives are planned around your certification level, configuration and the systems you want to see.",
+      "Yes. Rimstone Technical Diving is based in Fort White, Florida, in the middle of Cave Country, so it doesn't matter whether you're staying in Fort White, High Springs, Branford, Lake City or anywhere nearby. Ginnie Springs, Little River, Peacock Springs, Cow Springs and Madison Blue Spring are all a short drive away. Guided cave dives are planned around your certification level, configuration and the systems you want to see.",
   },
   {
     question: 'Who is cave guiding for?',
@@ -14,7 +14,7 @@ export const SERVICES_FAQ: FaqItem[] = [
   {
     question: 'Which North Florida cave sites do you guide?',
     answer:
-      'Guided dives take place across the North Florida spring networks, including Ginnie Springs (Devil\'s Eye and Devil\'s Ear), Little River, Peacock Springs and Madison Blue Spring.',
+      'Guided dives take place across the North Florida spring networks, including Ginnie Springs (Devil\'s Eye and Devil\'s Ear), Little River, Peacock Springs, Cow Springs and Madison Blue Spring. There are many other systems in the region available to tour as well, so tell me what you would like to see.',
   },
   {
     question: 'Can you guide sidemount, backmount and CCR divers?',
@@ -24,7 +24,7 @@ export const SERVICES_FAQ: FaqItem[] = [
   {
     question: 'What does a guided cave dive include?',
     answer:
-      'A site briefing, dive and gas planning for the system, logistics coordination and an experienced local guide in the water with you.',
+      "A site briefing, dive and gas planning for the system, logistics coordination and an experienced local guide in the water with you. I'll do as much or as little of the line work as you want. It's your vacation, and I'm here to help.",
   },
   {
     question: 'Do you guide in Mexico too?',

@@ -12,8 +12,8 @@ const services = [
     icon: Compass,
     title: 'Cave Guiding',
     items: [
-      'Guided cave dives for certified cave divers, based in Fort White and tailored to your certification, configuration (backmount, sidemount or CCR) and comfort level across the North Florida spring networks, including Ginnie Springs, Little River, Peacock Springs and Madison Blue Spring, and the cenote systems of the Riviera Maya near Tulum and Playa del Carmen, Mexico.',
-      'Full logistics coordination, site briefing, environmental gas planning, and international trip support.',
+      'Guided cave dives for certified cave divers, based in Fort White and tailored to your certification, configuration (backmount, sidemount or CCR) and comfort level across the North Florida spring networks, including Ginnie Springs, Little River, Peacock Springs, Cow Springs and Madison Blue Spring, plus many other systems in the region, and the cenote systems of the Riviera Maya near Tulum and Playa del Carmen, Mexico.',
+      "Full logistics coordination, site briefing, environmental gas planning, and international trip support. I'll handle as much or as little of the line work as you want. It's your vacation, and I'm here to help.",
     ],
   },
   {
@@ -52,7 +52,7 @@ export default function Services({ navigate }: ServicesProps) {
             </h1>
 
             <p className="max-w-2xl text-pretty text-lg leading-relaxed text-slate-300 sm:text-xl">
-              Already cave certified and visiting Fort White? I guide certified cave divers through the North Florida springs, including Ginnie Springs, Little River, Peacock Springs and Madison Blue Spring, as well as the cenotes of the Riviera Maya near Tulum and Playa del Carmen. I also offer one-on-one mentoring for technical divers.
+              Already cave certified and visiting North Florida&apos;s Cave Country? From my base in Fort White, I guide certified cave divers through the North Florida springs, including Ginnie Springs, Little River, Peacock Springs, Cow Springs, Madison Blue Spring and many other systems, as well as the cenotes of the Riviera Maya near Tulum and Playa del Carmen. I also offer one-on-one mentoring for technical divers.
             </p>
           </div>
         </div>
