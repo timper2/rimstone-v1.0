@@ -23,8 +23,8 @@ export default function Footer({ navigate }: FooterProps) {
   return (
     <footer className="border-t border-white/10 bg-slate-950">
       <div className="mx-auto max-w-7xl container-px py-14">
-        <div className="grid gap-10 md:grid-cols-6">
-          <div className="md:col-span-2">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8">
+          <div className="sm:col-span-2 lg:col-span-3">
             <div className="flex items-center gap-2.5 text-white">
               <span className="grid h-9 w-9 place-items-center rounded-lg bg-accent/15 ring-1 ring-accent/40">
                 <Waves className="h-5 w-5 text-accent" strokeWidth={2} />
@@ -36,7 +36,7 @@ export default function Footer({ navigate }: FooterProps) {
             </p>
           </div>
 
-          <div className="grid gap-10 md:col-span-2 md:grid-cols-2">
+          <div className="grid grid-cols-2 gap-10 lg:col-span-3">
             <div>
               <h4 className="font-display text-sm font-semibold uppercase tracking-widest text-slate-500">
                 Courses
@@ -73,7 +73,7 @@ export default function Footer({ navigate }: FooterProps) {
             </div>
           </div>
 
-          <div>
+          <div className="lg:col-span-2">
             <h4 className="font-display text-sm font-semibold uppercase tracking-widest text-slate-500">
               Hours
             </h4>
@@ -95,7 +95,7 @@ export default function Footer({ navigate }: FooterProps) {
             </ul>
           </div>
 
-          <div>
+          <div className="sm:col-span-2 lg:col-span-4">
             <h4 className="font-display text-sm font-semibold uppercase tracking-widest text-slate-500">
               Get in touch
             </h4>
@@ -106,9 +106,14 @@ export default function Footer({ navigate }: FooterProps) {
                   tim@rimstonediving.com
                 </a>
               </li>
-              <li className="flex items-center gap-2.5">
-                <Phone className="h-4 w-4 text-accent" />
-                <span>+1 (206) 227-9715 (Call / Text / WhatsApp)</span>
+              <li className="flex items-start gap-2.5">
+                <Phone className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent" />
+                <span>
+                  <a href="tel:+12062279715" className="block whitespace-nowrap hover:text-accent">
+                    +1 (206) 227-9715
+                  </a>
+                  <span className="text-slate-400">Call / Text / WhatsApp</span>
+                </span>
               </li>
               <li className="flex items-center gap-2.5">
                 <MapPin className="h-4 w-4 text-accent" />
