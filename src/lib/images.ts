@@ -17,6 +17,7 @@ const IMAGE_SIZES: Record<string, { width: number; height: number }> = {
   '/images/homepagefirstpicture.webp': { width: 1600, height: 900 },
   '/images/sidemount-enhanced.webp': { width: 1600, height: 1400 },
   '/images/sidemountJVC.webp': { width: 1600, height: 1065 },
+  '/images/tecdiver.webp': { width: 665, height: 1182 },
 };
 
 // Remote Pexels photos are requested at w=940&h=650.
