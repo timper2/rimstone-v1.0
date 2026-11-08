@@ -272,7 +272,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     ],
     gallery: [
       {
-        src: 'https://images.pexels.com/photos/7970796/pexels-photo-7970796.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        src: '/images/tecdiver.webp',
         caption: 'Descending on an extended-range dive',
       },
       {
