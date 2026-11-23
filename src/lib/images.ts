@@ -17,6 +17,7 @@ const IMAGE_SIZES: Record<string, { width: number; height: number }> = {
   '/images/geartruck.webp': { width: 768, height: 1024 },
   '/images/heropicture.webp': { width: 706, height: 960 },
   '/images/homepagefirstpicture.webp': { width: 1600, height: 900 },
+  '/images/monkeydust.webp': { width: 720, height: 960 },
   '/images/sidemount-enhanced.webp': { width: 1600, height: 1400 },
   '/images/sidemountJVC.webp': { width: 1600, height: 1065 },
   '/images/tecdiver.webp': { width: 665, height: 1182 },
