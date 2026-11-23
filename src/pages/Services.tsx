@@ -1,5 +1,5 @@
 import { ArrowRight, Compass, LifeBuoy } from 'lucide-react';
-import { ABOVE_THE_FOLD, PEXELS_SIZE } from '@/lib/images';
+import { ABOVE_THE_FOLD, imageSize } from '@/lib/images';
 import FaqSection from '@/components/FaqSection';
 import { SERVICES_FAQ } from '@/data/servicesFaq';
 
@@ -31,11 +31,12 @@ export default function Services({ navigate }: ServicesProps) {
     <div className="animate-fade-in">
       <section className="relative flex min-h-screen items-center overflow-hidden">
         <img
-          src="https://images.pexels.com/photos/10519070/pexels-photo-10519070.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-          alt="Professional diving services"
-          {...PEXELS_SIZE}
+          src="/images/monkeydust.webp"
+          alt="Diver standing on a wooden boardwalk inside a cave entrance, reflected in still spring water"
+          {...imageSize('/images/monkeydust.webp')}
           {...ABOVE_THE_FOLD}
           className="absolute inset-0 h-full w-full object-cover"
+          style={{ objectPosition: 'center 55%' }}
         />
 
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-slate-950/40" />
