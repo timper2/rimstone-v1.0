@@ -1,4 +1,4 @@
-import { Clock3, Mail, MapPin, Phone, Waves } from 'lucide-react';
+import { Clock3, Facebook, Mail, MapPin, Phone, Waves } from 'lucide-react';
 import type { RouteId } from '@/lib/routes';
 import type { NavigateFn } from '@/lib/useRouter';
 
@@ -118,6 +118,18 @@ export default function Footer({ navigate }: FooterProps) {
               <li className="flex items-center gap-2.5">
                 <MapPin className="h-4 w-4 text-accent" />
                 <span>Fort White, Florida 32038</span>
+              </li>
+              <li className="flex items-center gap-2.5">
+                <Facebook className="h-4 w-4 text-accent" aria-hidden="true" />
+                <a
+                  href="https://www.facebook.com/rimstonediving"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-accent"
+                >
+                  Facebook
+                  <span className="sr-only"> (opens in a new tab)</span>
+                </a>
               </li>
             </ul>
           </div>
