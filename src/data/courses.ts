@@ -277,7 +277,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
       },
       {
         src: '/images/tecdivesetup.webp',
-        caption: 'Stage and deco cylinders staged at the water’s edge',
+        caption: 'Stage and deco cylinders staged at Little River Spring, Branford, Florida',
       },
     ],
     prerequisites: ['Advanced Open Water and Nitrox', 'Comfort in a doubles or sidemount rig', 'Logged deeper experience', 'Medically fit to dive'],
