@@ -162,7 +162,8 @@ BUSINESS PROFILE LINKS (sameAs)
 - Listed in index.html JSON-LD, under the LocalBusiness block, "sameAs".
 - Current links:
     Google Business Profile: https://share.google/9ArQnVorDEruNenMv
-- Still to add when available: Facebook, Instagram, YouTube, and agency
+    Facebook Page: https://www.facebook.com/rimstonediving
+- Still to add when available: Instagram, YouTube, and agency
   instructor listing URLs. Add each as another line in the "sameAs" list,
   and also add the same links to the Google Business Profile ("Add profiles").
 
