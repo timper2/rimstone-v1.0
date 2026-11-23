@@ -9,6 +9,7 @@ const IMAGE_SIZES: Record<string, { width: number; height: number }> = {
   '/images/CCRPlanning.webp': { width: 1102, height: 1452 },
   '/images/CCRTim.webp': { width: 1024, height: 768 },
   '/images/SMharnesssetup.webp': { width: 768, height: 1024 },
+  '/images/SWJimAdria.webp': { width: 1600, height: 906 },
   '/images/abouttim.webp': { width: 795, height: 988 },
   '/images/cavedivers.webp': { width: 1600, height: 1066 },
   '/images/cavediversentrance.webp': { width: 1600, height: 1066 },

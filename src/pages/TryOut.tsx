@@ -1,6 +1,6 @@
 import { ArrowRight, Clock, Layers, Package, Sunrise, Sunset, Waves, Wind, Gauge } from 'lucide-react';
 import type { NavigateFn } from '@/lib/useRouter';
-import { ABOVE_THE_FOLD, BELOW_THE_FOLD, PEXELS_SIZE } from '@/lib/images';
+import { ABOVE_THE_FOLD, BELOW_THE_FOLD, PEXELS_SIZE, imageSize } from '@/lib/images';
 import CtaBanner from '@/components/CtaBanner';
 
 interface TryOutProps {
@@ -61,11 +61,11 @@ export default function TryOut({ navigate }: TryOutProps) {
     <div className="animate-fade-in">
       <section className="relative flex min-h-[70vh] items-end overflow-hidden">
         <img
-          src="https://images.pexels.com/photos/35541060/pexels-photo-35541060.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-          alt="Scuba gear prepared for a diving session"
-          {...PEXELS_SIZE}
+          src="/images/CCRPlanning.webp"
+          alt="Instructor walking a student through an AP Inspiration rebreather before a dive"
+          {...imageSize('/images/CCRPlanning.webp')}
           {...ABOVE_THE_FOLD}
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover object-[center_35%]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-slate-950/40" />
         <div className="relative mx-auto w-full max-w-7xl container-px pb-16 pt-32">
