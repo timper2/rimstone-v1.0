@@ -372,7 +372,7 @@ points: [
       },
       {
         src: '/images/SWJimAdria.webp',
-        caption: 'Rebreather divers holding trim in clear spring water',
+        caption: 'Two divers on KISS Sidewinder sidemount rebreathers in clear spring water',
       },
     ],
     prerequisites: ['Nitrox certification', 'Solid buoyancy and experience', 'Commitment to checklists', 'Medically fit to dive'],

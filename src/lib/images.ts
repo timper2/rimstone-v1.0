@@ -14,6 +14,7 @@ const IMAGE_SIZES: Record<string, { width: number; height: number }> = {
   '/images/cavedivers.webp': { width: 1600, height: 1066 },
   '/images/cavediversentrance.webp': { width: 1600, height: 1066 },
   '/images/doubles.webp': { width: 1024, height: 768 },
+  '/images/geartruck.webp': { width: 768, height: 1024 },
   '/images/heropicture.webp': { width: 706, height: 960 },
   '/images/homepagefirstpicture.webp': { width: 1600, height: 900 },
   '/images/sidemount-enhanced.webp': { width: 1600, height: 1400 },

@@ -1,6 +1,6 @@
 import { ArrowRight, Clock, Layers, Package, Sunrise, Sunset, Waves, Wind, Gauge } from 'lucide-react';
 import type { NavigateFn } from '@/lib/useRouter';
-import { ABOVE_THE_FOLD, BELOW_THE_FOLD, PEXELS_SIZE, imageSize } from '@/lib/images';
+import { ABOVE_THE_FOLD, BELOW_THE_FOLD, imageSize } from '@/lib/images';
 import CtaBanner from '@/components/CtaBanner';
 
 interface TryOutProps {
@@ -206,9 +206,9 @@ export default function TryOut({ navigate }: TryOutProps) {
       <section className="mx-auto max-w-7xl container-px pb-4">
         <div className="relative overflow-hidden rounded-3xl border border-white/10 p-8 sm:p-12">
           <img
-            src="https://images.pexels.com/photos/13022664/pexels-photo-13022664.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-            alt="Diving tanks ready on the dock"
-            {...PEXELS_SIZE}
+            src="/images/geartruck.webp"
+            alt="Rebreathers, sidemount rigs and dive gear laid out on a pickup tailgate in Florida cave country"
+            {...imageSize('/images/geartruck.webp')}
             {...BELOW_THE_FOLD}
             className="absolute inset-0 h-full w-full object-cover"
           />
