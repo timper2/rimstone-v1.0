@@ -371,8 +371,8 @@ points: [
         caption: 'Silent, bubble-free presence',
       },
       {
-        src: '/images/CCRPlanning.webp',
-        caption: 'Planning the dive before entering the water',
+        src: '/images/SWJimAdria.webp',
+        caption: 'Rebreather divers holding trim in clear spring water',
       },
     ],
     prerequisites: ['Nitrox certification', 'Solid buoyancy and experience', 'Commitment to checklists', 'Medically fit to dive'],
